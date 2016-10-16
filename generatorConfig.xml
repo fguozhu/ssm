@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <classPathEntry location="E:\workspace\ssm\mybatisGenerator\mysql-connector-java-5.1.34.jar" />
+  <context id="DB2Tables" targetRuntime="MyBatis3">
+    <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/test" driverClass="com.mysql.jdbc.Driver" password="admin" userId="root" />
+    <javaModelGenerator targetPackage="com.web.ssm.pojo" targetProject="ssm/src/main/java" />
+    <sqlMapGenerator targetPackage="com.web.ssm.mapping" targetProject="ssm/src/main/java" />
+    <javaClientGenerator targetPackage="com.web.ssm.dao" targetProject="ssm/src/main/java" type="XMLMAPPER" />
+    <!-- 
+    <table schema="product" tableName="tbl_product"  domainObjectName="Product" enableInsert="true"  
+           enableSelectByPrimaryKey="true" enableUpdateByPrimaryKey="true"  
+           enableDeleteByPrimaryKey="true" enableSelectByExample="false"  
+           enableDeleteByExample="false" enableCountByExample="false"  
+           enableUpdateByExample="false">
+    </table>
+    -->
+    <table schema="seller" tableName="tbl_seller"  domainObjectName="Seller" enableInsert="true"  
+           enableSelectByPrimaryKey="true" enableUpdateByPrimaryKey="true"  
+           enableDeleteByPrimaryKey="true" enableSelectByExample="false"  
+           enableDeleteByExample="false" enableCountByExample="false"  
+           enableUpdateByExample="false">
+    </table>
+  </context>
+</generatorConfiguration>
